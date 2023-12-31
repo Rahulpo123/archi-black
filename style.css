@@ -1,0 +1,621 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    
+}
+body,html{
+    overflow-x: hidden !important;
+}
+body{
+    overflow-x: hidden;
+    background: rgba(0, 0, 0, 0.734);
+    color: white;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+.imgptr{
+    display: grid;
+    margin-left: 30%;
+    place-content: center;
+}
+/*-----------------navbar------------*/
+#nav{
+    position: relative;
+    min-height: 5rem;
+    display: flex;
+    margin: 1rem;
+}
+#nav .logo{
+    
+    font-size: 1.8rem;
+    min-width: 4rem;
+    margin-left: 2rem;
+}
+#nav .nav-elemets{
+    margin-left: 60%;
+
+}
+#nav .nav-elemets a{
+    margin: 1rem 1rem 1rem 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+.ham{
+    display: none;
+}
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+/*-------------hero----------*/
+.cnt{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    text-align: center;
+}
+.cnt .content{
+    letter-spacing: .2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.cnt .content h2{
+    font-size: 3.6rem;
+    font-weight: 500;
+    width: 100%;
+    clip-path: polygon(0% 0%,100% 0,100% 100%,0% 100%);
+    font-family: 'Lato', sans-serif;;
+}
+.cnt .content h1{
+    font-size: 3.8rem;
+    font-weight: 700;
+    clip-path: polygon(0% 0%,100% 0,100% 100%,0% 100%);
+    
+}
+.cnt .content h1 span{
+    font-size: 2rem;
+    clip-path: polygon(0% 0%,100% 0,100% 100%,0% 100%);
+}
+.block{
+    
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    color: rgba(0, 0, 0, 0.85);
+    background: black;
+    box-shadow: 1px 1px 3rem 1px black;
+    left: -2%;
+    top: 50%;
+    z-index: -1;
+}
+.char{
+    transform: translateY(115px);
+    transition: transform .5s;
+}
+/*----------------video---------*/
+#abt{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+#abt #abtpc{
+    margin-left: 20%;
+}
+#abt #abtpc img{
+    width: 200px;
+    height: 300px;
+    
+}
+#abt h3{
+    font-family: 'Lato', sans-serif;
+
+}
+
+#abt #abtpc img:last-child{
+    margin-left: 10%;
+    margin-top: 20%;
+}
+/*-------------ABOUT---------------*/
+#about{
+    margin-right: 20%;
+}
+
+#about h1{
+    letter-spacing: 1px;
+}
+#about p{
+    letter-spacing: 1px;
+    
+}
+/*----------------cards------------*/
+#cdr{
+    margin-top: 10rem;
+    background: black;
+    color: white;
+}
+#cdr h1{
+    font-weight: 400;
+
+}
+#cdr h4{
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+#cdr h3{
+    font-weight: 400;
+}
+.card{
+    box-shadow: .3px .3px 1px white;
+}
+/*latest project*/
+#projects{
+    position: relative;
+    margin-top: 10rem;
+    
+    
+    
+}
+#projects:nth-child(2){
+    flex-direction: row-reverse;
+}
+
+#pjt{
+    margin-top:20rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: row;
+   
+
+}
+
+   
+.pjt2{
+    flex-direction: column-reverse;
+}
+
+#pjt #imga{
+    margin-left: 20%;
+}
+#pjt img{
+    height: 130%;
+    width: 150%;
+    
+
+}
+#pjt .imgtxt{
+    margin-left: 9rem;
+    margin-right: 20%;
+
+}
+#pjt1{
+    margin-top:20rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: row-reverse;
+   
+
+}
+
+   
+.pjt2{
+    flex-direction: column-reverse;
+}
+
+#pjt1 #imga{
+    margin-right: 23%;
+}
+#pjt1 img{
+    height: 130%;
+    width: 150%;
+    
+
+}
+#pjt1 .imgtxt{
+    margin-right: 9rem;
+    margin-left:17%;
+
+}
+/*testimonials-----------------------*/
+/* style.css */
+.testimonials {
+    text-align: center;
+  }
+  
+  .testimonial-cards {
+    
+    
+    justify-content: space-between;
+    gap: 2rem;
+
+  }
+.testimonials h2{
+    font-family: 'Poppins', sans-serif;
+}
+  
+  .testimonial-card {
+    margin-bottom: 30px;
+    width: 80%;
+    margin-left: 1rem;
+  }
+  
+  .testimonial-text {
+    font-size: 16px;
+    font-style: italic;
+  }
+.hover{
+    color: rebeccapurple;
+}
+#crds{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+@media (max-width: 768px) {
+    #crds {
+        flex-direction: column;
+    }
+    .testimonial-card{
+        height: 10%;
+        margin-left: 10%;
+    }
+    #crds img{
+        height: 200px;
+        width: 100%;
+
+    }
+    .imgptr{
+        margin-left: 0%;
+    }
+}
+#myNav{
+    z-index: 10;
+}
+  
+  /* Add more styling as needed */
+/*---------footeer----------*/
+footer {
+    background-color: rgba(0, 0, 0, 0.679);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    height: 100%;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  .footer-links li a {
+    color: white;
+    text-decoration: none;
+  }
+/*-----------responsive website-------------*/
+@media (max-width: 768px){
+    #nav .nav-elemets{
+        display: none;
+       
+    }
+    .ham{
+        display: block;
+        
+        font-size: 1.3rem;
+        margin-left: 60%;
+    }
+    #nav .logo{
+        font-size: 1.5rem;
+    }
+    #nav .nav-elemets{
+         margin-left: 12rem;
+    }
+    #nav .nav-elemets a{
+        margin: 0.6px;
+    }
+    /*----------hero-------------*/
+    .cnt{
+        margin-top: -3rem;
+    }
+    .cnt .content h2{
+        margin-top: -4rem;
+        margin-left: -5.5rem;
+        font-size: 2rem;
+        width: 200%;
+    }
+    .cnt .content h1{
+        margin-left: -5.5rem;
+        font-size: 2.5rem;
+        width: 200%;
+    }
+    .cnt .content  h1 span{
+        font-size: 1rem;
+    }
+    /*---------abt----------*/
+    #abt{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    #abt  #abtpc img{
+        width: 130px;
+        height: 150px;
+        margin: 0rem 1rem 0 1rem;
+    }
+    #abt #abtpc img:last-child{
+        margin-left: 0;
+        margin-top: 0;
+    }
+    #abt #abtpc{
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    /*-------------cards--------------*/
+    #cdr #cards h1{
+        font-size: 10rem;
+    }
+    #cdr h4{
+        font-size: 1rem;
+    }
+    .crd-tt{
+        font-size: 1.5rem;
+    }
+    .crd-pp{
+        font-size: .9rem;
+    }
+    #cdr{
+        text-align: center;
+    }
+    /*----------------projects------------*/
+    #pjt{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #projects:first-child{
+        margin-top: 10rem;
+    }
+    #projects{
+       
+        height: 600px;
+        position: relative;
+        margin-top: 1rem;
+        margin-bottom: -4rem;
+        
+    }
+    #pjt #imga{
+        margin-left: 0%;
+        
+        
+    }
+    #pjt{
+       
+        height: 700px;
+        margin-top: 1rem;
+    }
+    #pjt img{
+        height: 100%;
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        
+    
+    }
+    #pjt .imgtxt{
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 3rem;
+        margin-bottom: -5rem;
+        
+        
+    
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .imgpp{
+        width: 90%;
+    }
+    #pjt .imgtxt h1{
+        font-family: 'Lato', sans-serif;
+    }
+    #pjt .imgtxt p{
+        font-family: 'Roboto', sans-serif;
+    }
+    #pjt1 .imgtxt h1{
+        font-family: 'Lato', sans-serif;
+    }
+    #pjt1 .imgtxt p{
+        font-family: 'Roboto', sans-serif;
+    }
+    #pjt1{
+        margin-top:0;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        margin-top: -11rem;
+        flex-direction: column;
+        margin-bottom: -10rem;
+       
+    
+    }
+    .imgptr{
+        height: 400px;
+        width: 100%;
+    }
+
+    #pjt1 #imga{
+    margin-left: 0%;
+    margin-top: -11rem;
+    }
+    #pjt1 img{
+        margin-top: -3rem;
+    height: 100%;
+    width: 110%;
+    margin-left: 10%;
+    margin-bottom: 1rem;
+    
+
+    }
+    #pjt1 .imgtxt{
+
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: -10rem;
+
+    }}
+.contin{
+    text-align: center;
+    border: black .1px solid;
+    box-shadow: 1px 1px 10px  black;
+}
+.contin img{
+    height: 200px;
+    
+}
+.contin h1{
+    font-weight: 900;
+    margin-bottom: .4rem;
+    margin-top: .5rem;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1rem;
+
+}
+.contin p{
+    font-size: 1rem;
+}
+#lndpjt{
+    display: flex;
+    margin-top: 5rem;
+}
+#lndpjt img{
+    height: 400px;
+    width: 300px;
+}
+#lndpjt .ln-text{
+    margin-left: 4rem;
+}
+#lndpjt1{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 5rem;
+}
+#lndpjt1 img{
+    height: 400px;
+    width: 300px;
+}
+#lndpjt1 .ln-text{
+    margin-left: 0rem;
+    margin-right: 4rem;
+}
+@media (max-width: 768px){
+    #lndpjt{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    #lndpjt1{
+        display: flex;
+        flex-direction: column;
+        padding: 7%;
+        margin-top: 1rem;
+    }
+    #lndpjt .ln-text{
+        margin-left: 0rem;
+        margin-top: .5rem;
+    }
+    #lndpjt1 .ln-text{
+        margin-left: 0rem;
+        margin-top: .5rem;
+    }
+    #lndpjt{
+        padding: 7%;
+        margin-left: 4%;
+    }
+    #lndpjt1{
+        padding: 7%;
+        margin-left: 4%;
+    }
+    .contin img{
+        height: 300px;
+        width: 80%;
+        
+    }
+}
+  

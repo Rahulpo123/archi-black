@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARCHITECT</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  <!-- Option 1: Include in HTML -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Lato:wght@300&family=Open+Sans&family=Poppins:wght@300;400&family=Roboto:wght@300&family=Sevillana&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      
+      <a href="contact.html">Contact</a>
+    </div>
+    
+  </div>
+    <div id="nav">
+        <div class="logo">LOGO</div>
+        <div class="nav-elemets">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <span class="ham" onclick="openNav()">&#9776;</span>
+    
+    </div>
+
+
+
+ <!--------------signin page-->
+ <div class="container mt-5">
+    <h1 class="mt-2  mb-3 text-center">Inquire</h1>
+<form class="row g-3 needs-validation" novalidate>
+    <div class="col-md-4 position-relative">
+      <label for="validationTooltip01" class="form-label">First name</label>
+      <input type="text" class="form-control" id="validationTooltip01" value="" required>
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 position-relative">
+      <label for="validationTooltip02" class="form-label">Last name</label>
+      <input type="text" class="form-control" id="validationTooltip02" value="" required>
+      <div class="valid-tooltip">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 position-relative">
+      <label for="validationTooltipUsername" class="form-label">Adress</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text" id="validationTooltipUsernamePrepend"></span>
+        <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+        <div class="invalid-tooltip">
+          Please choose Adress
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 position-relative">
+      <label for="validationTooltip03" class="form-label">Mobile Number</label>
+      <input type="text" class="form-control" id="validationTooltip03" name="MObile number" required>
+      <div class="invalid-tooltip">
+        Please provide a Number.
+      </div>
+    </div>
+    <div class="col-md-3 position-relative">
+      <label for="validationTooltip04" class="form-label">Location</label>
+      <select class="form-select" id="validationTooltip04" required>
+        <option >Interior</option>
+        <option>Exterior</option>
+        <option >Gardern</option>
+        <option >Full Home</option>
+        <option>Other</option>
+      </select>
+      <div class="invalid-tooltip">
+        Please select a valid state.
+      </div>
+    </div>
+    <div class="col-md-3 position-relative">
+      <label for="validationTooltip05" class="form-label">Pin Code</label>
+      <input type="text" class="form-control" id="validationTooltip05" required>
+      <div class="invalid-tooltip">
+        Please provide a Pin Code.
+      </div>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Submit form</button>
+    </div>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+<footer class="mt-5 mb-3">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>ARCHITECT</h1>
+          <p>Copyright &copy; 2023 By ARCHITECT</p>
+        </div>
+        <div class="col-md-6">
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+<script>// script.js
+    const cards = document.querySelectorAll('.testimonial-card');
+    
+    cards.forEach(card => {
+      card.addEventListener('mouseover', () => {
+        card.classList.add('hover'); // Apply a hover effect
+      });
+      card.addEventListener('mouseout', () => {
+        card.classList.remove('hover');
+      });
+    });
+    function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+    </script>
+ 
+
+
+
+
+
+
+    <!-----------script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="anime.min.js"></script>
+   <script>
+         const cn = document.querySelector(".cnt");
+         for(var i= 0;i<50;i++){
+             const blocks=document.createElement('div');
+             blocks.classList.add("block");
+             cn.appendChild(blocks);
+         }
+         function animateblocks(){
+             anime({
+                 targets:'.block',
+                 translateX:function(){
+                   return anime.random(0,1200)
+                },
+           
+                translateY:function(){
+                   return anime.random(-300,1100)
+                },
+                easing:'linear',
+                duration:5000,
+                delay:anime.stagger(10),
+                complete:animateblocks,
+             })
+         }
+         animateblocks()
+
+         /*===============gsap===========*/
+         const text = new SplitType("#content");
+         gsap.to(".char",{
+             y:0,
+             stagger:0.06,
+             delay:0.3,
+             duration:.1,
+         })
+
+
+     </script>
+</body>
+</html>
