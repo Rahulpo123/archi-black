@@ -207,6 +207,9 @@ h1{
 .card{
     box-shadow: .3px .3px 1px white;
 }
+.card img{
+    height: 300px;
+}
 /*latest project*/
 #projects{
     position: relative;
@@ -541,8 +544,8 @@ footer {
     }}
 .contin{
     text-align: center;
-    border: black .1px solid;
-    box-shadow: 1px 1px 10px  black;
+   
+    
 }
 .contin img{
     height: 200px;
@@ -554,11 +557,12 @@ footer {
     margin-top: .5rem;
     color: black;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.2rem;
 
 }
 .contin p{
     font-size: 1rem;
+    color:black;
 }
 #lndpjt{
     display: flex;
